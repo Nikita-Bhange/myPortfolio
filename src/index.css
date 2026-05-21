@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+/* ---------------- DESIGN TOKENS ---------------- */
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 240 10% 8%;
+  --primary: 270 91% 65%;
+  --border: 220 13% 91%;
+
+  --gradient-primary: linear-gradient(135deg, hsl(270 91% 65%), hsl(320 90% 65%));
+  --shadow-glow: 0 0 40px hsl(270 91% 65% / 0.3);
+}
+
+.dark {
+  --background: 240 10% 4%;
+  --foreground: 0 0% 98%;
+  --primary: 270 91% 70%;
+  --border: 240 6% 15%;
+}
+
+/* ---------------- BASE ---------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+/* Keep all sections centered consistently across viewport sizes */
+.container {
+  width: min(1120px, 100% - 2rem);
+  margin-inline: auto;
+}
+
+/* ---------------- UTILITIES ---------------- */
+
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow {
+  box-shadow: var(--shadow-glow);
+}
+
+.glass {
+  backdrop-filter: blur(16px);
+  background: hsl(var(--background) / 0.6);
+  border: 1px solid hsl(var(--border) / 0.5);
+}
