@@ -158,8 +158,7 @@ const Navbar = () => {
 const taglines = [
   "Building scalable web apps.",
   "Crafting clean user experiences.",
-  "Aspiring SDE @ FAANG.",
-  "MERN Stack Developer.",
+  "Full Stack Developer.",
 ];
 const Hero = () => {
   const [text, setText] = useState("");
@@ -217,7 +216,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-4"
+          className="font-display text-4xl md:text-5xl lg:text-7xl font-bold mb-4"
         >
           Hi, I'm <span className="gradient-text">Nikita Bhange</span>
         </motion.h1>
@@ -226,9 +225,9 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-xl md:text-2xl text-muted-foreground mb-2"
+          className="text-2xl md:text-3xl text-muted-foreground mb-2"
         >
-          MERN Stack Developer · Aspiring SDE
+          Full Stack Web Developer 
         </motion.p>
 
         <div className="text-base md:text-lg text-foreground/80 mb-10 h-7">
@@ -345,8 +344,8 @@ const About = () => (
 
 /* ---------------- Projects ---------------- */
 const projects = [
-  { title: "EduMind_AI", description: "A full-stack learning platform with AI-generated quizzes, Summaries, personalized learning paths for documentation and notes, and real-time progress analytics.", stack: ["React.js", "Node.js", "Express", "MongoDB", "Gemini API", "Tailwind"], github: "https://github.com/Nikita-Bhange/EduMind_AI", demo: "https://example.com"},
-  { title: "ReWear", description: "Ecommerce site to sell and buy second hand used products, admin panel to analyze the items and users analytics, having two factor authentication, , chat system", stack: ["Reactjs","Tailwind CSS", "Nodejs","Socket.io", "Express", "MySql"], github: "https://github.com/Nikita-Bhange/ReWear", demo: "https://example.com"}
+  { title: "EduMind_AI", description: "A full-stack learning platform with AI-generated quizzes, Summaries, personalized learning paths for documentation and notes, and real-time progress analytics.", stack: ["React.js", "Node.js", "Express", "MongoDB", "Gemini API", "Tailwind"], github: "https://github.com/Nikita-Bhange/EduMind_AI", demo: "https://edu-mind-ai-psi.vercel.app/"},
+  { title: "ReWear", description: "Ecommerce site to sell and buy second hand used products, admin panel to analyze the items and users analytics, having two factor authentication, , chat system", stack: ["Reactjs","Tailwind CSS", "Nodejs","Socket.io", "Express", "MySql","deploy soon..."], github: "https://github.com/Nikita-Bhange/ReWear"}
 ];
 
 const Projects = () => {
