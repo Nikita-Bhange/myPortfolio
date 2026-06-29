@@ -3,14 +3,17 @@ import {
   ArrowDown, ExternalLink,  Mail, Moon, Sun, Send,
   Code2, Rocket, Target, Sparkles,
 } from "lucide-react";
-// import { SiGithub,  SiLinkedIn } from "react-icons/si";
+
 import { useEffect, useRef, useState } from "react";
 import {
   SiReact, SiJavascript, SiTailwindcss,  SiHtml5,
   SiNodedotjs, SiExpress, SiPython, 
   SiMongodb, SiMysql,
   SiGit, SiVercel, SiPostman,
+  SiOpenjdk,
 } from "react-icons/si";
+import { FaCss3, FaJava } from "react-icons/fa6"; // Or "react-icons/fa"
+
 import { toast } from "sonner";
 import { useTheme } from "@/hooks/use-theme.jsx";
 import { cn } from "@/lib/utils.js";
@@ -439,15 +442,17 @@ const Projects = () => {
 /* ---------------- Skills ---------------- */
 const skillGroups = [
   { title: "Programming Languages", skills: [
+
     { name: "Python", Icon: SiPython }, 
-    { name: "Java", Icon: SiJava },
+    { name: "Java", Icon: FaJava },
 
   ]},
   { title: "Frontend", skills: [
     { name: "React", Icon: SiReact }, 
     { name: "JavaScript", Icon: SiJavascript },
     { name: "Tailwind", Icon: SiTailwindcss }, { name: "HTML5", Icon: SiHtml5 },
-    { name: "CSS", Icon: SiCss3 },
+    { name: "CSS", Icon: FaCss3 },
+  
   ]},
   { title: "Backend", skills: [
     { name: "Node.js", Icon: SiNodedotjs }, { name: "Express", Icon: SiExpress },
