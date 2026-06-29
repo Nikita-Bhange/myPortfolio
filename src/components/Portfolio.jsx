@@ -345,7 +345,7 @@ const About = () => (
 /* ---------------- Projects ---------------- */
 const projects = [
   { title: "EduMind_AI", description: "A full-stack learning platform with AI-generated quizzes, Summaries, personalized learning paths for documentation and notes, and real-time progress analytics.", stack: ["React.js", "Node.js", "Express", "MongoDB", "Gemini API", "Tailwind"], github: "https://github.com/Nikita-Bhange/EduMind_AI", demo: "https://edu-mind-ai-psi.vercel.app/"},
-  { title: "ReWear", description: "Ecommerce site to sell and buy second hand used products, admin panel to analyze the items and users analytics, having two factor authentication, , chat system", stack: ["Reactjs","Tailwind CSS", "Nodejs","Socket.io", "Express", "MySql","deploy soon..."], github: "https://github.com/Nikita-Bhange/ReWear"}
+  { title: "ReWear", description: "Ecommerce site to sell and buy second hand used products, admin panel to analyze the items and users analytics, having two factor authentication ", stack: ["Reactjs","Tailwind CSS", "Nodejs", "Express", "MySql","deploy soon..."], github: "https://github.com/Nikita-Bhange/ReWear"}
 ];
 
 const Projects = () => {
@@ -438,14 +438,20 @@ const Projects = () => {
 
 /* ---------------- Skills ---------------- */
 const skillGroups = [
+  { title: "Programming Languages", skills: [
+    { name: "Python", Icon: SiPython }, 
+    { name: "Java", Icon: SiJava },
+
+  ]},
   { title: "Frontend", skills: [
     { name: "React", Icon: SiReact }, 
     { name: "JavaScript", Icon: SiJavascript },
     { name: "Tailwind", Icon: SiTailwindcss }, { name: "HTML5", Icon: SiHtml5 },
+    { name: "CSS", Icon: SiCss3 },
   ]},
   { title: "Backend", skills: [
     { name: "Node.js", Icon: SiNodedotjs }, { name: "Express", Icon: SiExpress },
-    { name: "Python", Icon: SiPython }, 
+    
   ]},
   { title: "Database", skills: [
     { name: "MongoDB", Icon: SiMongodb },
